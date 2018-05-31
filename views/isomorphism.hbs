@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="title-container">
+    <div class="title">
+      The isomorphism theorems for vector spaces
+    </div>
+  </div>
+  <div class="body">
+    <div>
+      <p>
+        Read first about the <a>universal property of quotient spaces</a>.
+        It's the engine powering the isomorphism theorems.
+      </p>
+      <p>
+        <b>The first isomorphism theorem:</b>
+        Let V, W be vector spaces, T: V --> W a linear map, and U a subspace of ker(T).
+        Then V/ker(T) is isomorphic to ran(T).
+      </p>
+      <p>
+        <b>Intuition:</b>
+        The idea is to trim down V and W until T is a bijection.
+        First, to tighten the domain, we quotient V by ker(T), zeroing out everything that T sends to 0.
+        Thus, our new map, call it T', has a trivial kernel and is thus injective.
+        Once we restrict the codomain of T' to ran(T) = ran(T'), it becomes immediately obvious that we have a surjective map.
+      </p>
+    </div>
+    <div class="bottom">
+      <a href="/"> Home </a>
+    </div>
+  </div>
+</div>

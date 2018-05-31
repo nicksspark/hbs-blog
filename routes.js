@@ -12,6 +12,10 @@ router.get('/continuity', (req, res) => {
   res.render('continuity')
 })
 
+router.get('/isomorphism', (req, res) => {
+  res.render('isomorphism')
+})
+
 router.get('/about', (req, res) => {
   res.render('about')
 })

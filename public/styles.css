@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #ffedb7
+}
+.container {
+  margin-left: 175px;
+  margin-right: 175px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  height: 100%;
+  /* background-color: White; */
+  background-image: url("http://catholicmom.com/wp-content/uploads/2013/07/big_apple_small_apple.jpg");
+  font-family: Georgia;
+}
+
+.title {
+  font-size: 32px;
+  font-family: "Courier New";
+  background-color: #ffedb7;
+}
+
+.body {
+  font-size: 17px;
+}
+
+.title-container {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 25px;
+}
+
+a, p {
+  background-color: #ffedb7;
+  padding: 2px;
+}
+
+a:hover {
+  color: #eaa0ff;
+}

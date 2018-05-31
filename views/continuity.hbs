@@ -1,14 +1,37 @@
-<div>
-  <h1> A characterization of continuity in a metric space </h1>
-  <p>
-    Perhaps you are familiar with the usual epsilon-delta definition of continuity in a metric space:
-    a real-valued function f is continuous if for all real x and for all positive epsilon
-    there exists a positive delta such that for all real r,
-    |x - r| < delta implies that |f(x) - f(r)| < epsilon.
-    Presented here as a theorem is an equivalent, more general definition of a continuous function:
-    a real function f is continuous (in the delta-epsilon sense) if and only if the preimage of every open set is open.
-  </p>
-  <div>
-    <a href="/"> Home </a>
+<div class="container">
+  <div class="title-container">
+    <div class="title"> A characterization of continuity in a metric space </div>
+  </div>
+  <div class="body">
+    <p>
+      Perhaps you are familiar with the usual epsilon-delta definition of continuity in a metric space:
+      a real-valued function f is continuous if for all real x and for all positive epsilon
+      there exists a positive delta such that for all real r,
+      |x - r| < delta implies that |f(x) - f(r)| < epsilon.
+      Presented here as a theorem is an equivalent, more concise definition of continuity.
+    </p>
+    <p>
+      <b>Theorem:</b>
+      A real function f is continuous (in the delta-epsilon sense) if and only if the preimage of every open set is open.
+    </p>
+    <p>
+      <b>Proof:</b>
+      (==>) Let f: <b>R</b> --> <b>R</b> satisfy the epsilon-delta condition for continuity,
+      and let U be an open set in the range of f.
+      We want to show that the preimage of U, under f, is open as well.
+      Suppose, toward a contradiction, that the preimage of U was not open--i.e. contained a boundary point. Call it x.
+      By assumption we have that for every delta > 0 there exists an epsilon > 0 such that for every real r,
+      |x - r| < delta ==> |f(x) - f(r)| < epsilon.
+      Fix epsilon > 0, and consider the epsilon-neighborhood of f(x).
+      For all delta > 0, there exists a point r in the delta-neighborhood of x such that r is not in the preimage of U.
+      Thus, by the epsilon-delta definition of continuity, we have that f(r) is in the epsilon-neighborhood of f(x).
+      Since f(r) is not in U, f(x) is a boundary point of U, and U is not open.
+    </p>
+    <p>
+      (<==): Suppose that the preimage of f preserves open sets, and fix epsilon > 0. Then
+    </p>
+    <div class="bottom">
+      <a href="/"> Home </a>
+    </div>
   </div>
 </div>
