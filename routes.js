@@ -12,6 +12,10 @@ router.get('/continuity', (req, res) => {
   res.render('continuity')
 })
 
+router.get('/intermediate', (req, res) => {
+  res.render('intermediate')
+})
+
 router.get('/quotient', (req, res) => {
   res.render('quotient')
 })
