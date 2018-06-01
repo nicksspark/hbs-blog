@@ -7,12 +7,12 @@
   <div class="body">
     <div>
       <p>
-        Read first about the <a>universal property of quotient spaces</a>.
+        Read first about the <a href="/quotient">universal property of quotient spaces</a>.
         It's the engine powering the isomorphism theorems.
       </p>
       <p>
-        <b>The first isomorphism theorem:</b>
-        Let V, W be vector spaces, T: V --> W a linear map, and U a subspace of ker(T).
+        <b>Theorem (the first isomorphism theorem):</b>
+        Let V, W be vector spaces and T: V --> W a linear map.
         Then V/ker(T) is isomorphic to ran(T).
       </p>
       <p>
@@ -20,7 +20,16 @@
         The idea is to trim down V and W until T is a bijection.
         First, to tighten the domain, we quotient V by ker(T), zeroing out everything that T sends to 0.
         Thus, our new map, call it T', has a trivial kernel and is thus injective.
-        Once we restrict the codomain of T' to ran(T) = ran(T'), it becomes immediately obvious that we have a surjective map.
+        Once we restrict the codomain of T' to ran(T) = ran(T'),
+        it becomes immediately obvious that we have a surjective map.
+      </p>
+      <p>
+        <b>Proof:</b>
+        Note that ker(T) is contained in ker(T),
+        and recall the universal property of quotient spaces,
+        which states that T lifts to a unique linear map T': V/ker(T) --> W
+        and that ker(T') = ker(T)/ker(T) = [0]. Thus T' is injective.
+        Now, as above, shrinking the domain to ran(T) yields a surjection, and thus a bijection.
       </p>
     </div>
     <div class="bottom">

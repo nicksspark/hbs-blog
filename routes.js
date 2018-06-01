@@ -12,8 +12,16 @@ router.get('/continuity', (req, res) => {
   res.render('continuity')
 })
 
+router.get('/quotient', (req, res) => {
+  res.render('quotient')
+})
+
 router.get('/isomorphism', (req, res) => {
   res.render('isomorphism')
+})
+
+router.get('/brouwer', (req, res) => {
+  res.render('brouwer')
 })
 
 router.get('/about', (req, res) => {

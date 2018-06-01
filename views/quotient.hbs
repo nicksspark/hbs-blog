@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="title-container">
+    <div class="title">
+      Universal property of quotient spaces
+    </div>
+  </div>
+  <div class="body">
+    <div>
+      <p>
+        For a vector space V and its subspace U,
+        we define the quotient map π: V --> V/U by π(v) = [v].
+      </p>
+      <p>
+        <b>Theorem:</b>
+        Let V, W be vector spaces, and let T: V --> W be a linear map.
+        Suppose that U is a subspace of ker(T) in V.
+        Then T lifts to a linear map T': V/U --> W such that T = T' • π and ker(T') = ker(T)/U.
+      </p>
+      <p>
+        <b>Intuition:</b>
+        The idea is that out of every linear map you an factor out π,
+        and the resulting other factor is unique and has a smaller kernel.
+      </p>
+      <p>
+        <b>Comments:</b>
+        While the universal property of quotient spaces looks like a result in linear algebra,
+        there exists a "universal property of quotients" for groups, rings, algebras, and other algebraic objects.
+        This is a dead giveaway that we are looking at a result in category theory, which I will cover later.
+        Next, read about the <a href="isomorphism">isomorphism theorems for vector spaces</a>,
+        which rely heavily on the above result.
+        Since there are universal properties of quotients for other categories,
+        there are isomorphism theorems for other categories, too.
+      </p>
+    </div>
+    <div class="bottom">
+      <a href="/"> Home </a>
+    </div>
+  </div>
+</div>
