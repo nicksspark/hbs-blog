@@ -31,4 +31,11 @@ router.get('/brouwer', (req, res) => {
 router.get('/about', (req, res) => {
   res.render('about')
 })
+
+router.get('/particles', (req, res) => {
+  res.render('particles')
+})
+router.get('/worm', (req, res) => {
+  res.render('worm')
+})
 module.exports = router;
